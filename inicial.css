@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff9900;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+    header{
+        background-color: darkred;
+    }
+    body{
+        background-color: red;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .bar.active1 {
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .bar.active2 {
+        opacity: 0;
+    }
+
+    .bar.active3 {
+        transform: translateY(-9px) rotate(45deg);
+    }
+
+    .selecione{
+        color: white;
+        margin-top: 60px;
+        margin-right: 12px;
+        padding-left: 35px;  
+        padding-top: 25px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flexbox;
+    }
+ 
+    button{
+        width: 160px;
+        height:160px;
+        margin-left: 23px;
+        margin-top: 100px;
+        background-color: #a10404;
+        border-color: aqua;
+        border-radius: 15px;
+        display: flexbox;
+
+    }
+
+    .policia {
+    color: white;
+    font-size: 20px;
+    }
+
+    .ambulancia{
+        margin-top: 80px;
+        color: white;
+        font-size: 20px;
+    }
+    .bombeiro {
+        color: white;
+        font-size: 20px;
+        }
+
+    .animais {
+            color: white;
+            font-size: 20px;
+            }
+
+            
+
+            
+}
+
